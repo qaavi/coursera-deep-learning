@@ -9,7 +9,7 @@ For this exercise, our trigger word will be "Activate." Every time it hears you 
 
 After completing this assignment, perhaps you can also extend it to run on your laptop so that every time you say "activate" it starts up your favorite app, or turns on a network connected lamp in your house, or triggers some other event? 
 
-<img src="images/sound.png" style="width:1000px;height:150px;">
+<img src="https://hub.coursera-notebooks.org/user/ockloifhzcbbmvjhrhoplj/files/Week%203/Trigger%20word%20detection/images/sound.png" style="width:1000px;height:150px;">
 
 In this assignment you will learn to: 
 - Structure a speech recognition project
