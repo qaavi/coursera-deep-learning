@@ -1,7 +1,5 @@
 
-
-```python
-# Trigger Word Detection
+## Trigger Word Detection
 
 Welcome to the final programming assignment of this specialization! 
 
@@ -20,7 +18,6 @@ In this assignment you will learn to:
 
 Lets get started! Run the following cell to load the package you are going to use.    
 
-```
 
 
 ```python
@@ -36,8 +33,6 @@ from td_utils import *
 %matplotlib inline
 ```
 
-
-```python
 # 1 - Data synthesis: Creating a speech dataset 
 
 Let's start by building a dataset for your trigger word detection algorithm. A speech dataset should ideally be as close as possible to the application you will want to run it on. In this case, you'd like to detect the word "activate" in working environments (library, home, offices, open-spaces ...). You thus need to create recordings with a mix of positive words ("activate") and negative words (random words other than activate) on different background sounds. Let's see how you can create such a dataset. 
@@ -49,7 +44,6 @@ One of your friends is helping you out on this project, and they've gone to libr
 In the raw_data directory, you can find a subset of the raw audio files of the positive words, negative words, and background noise. You will use these audio files to synthesize a dataset to train the model. The "activate" directory contains positive examples of people saying the word "activate". The "negatives" directory contains negative examples of people saying random words other than "activate". There is one word per audio recording. The "backgrounds" directory contains 10 second clips of background noise in different environments.
 
 Run the cells below to listen to some examples.
-```
 
 
 ```python
@@ -68,8 +62,6 @@ IPython.display.Audio("./raw_data/backgrounds/1.wav")
 
 You will use these three type of recordings (positives/negatives/backgrounds) to create a labelled dataset.
 
-
-```python
 ## 1.2 - From audio recordings to spectrograms
 
 What really is an audio recording? A microphone records little variations in air pressure over time, and it is these little variations in air pressure that your ear also perceives as sound. You can think of an audio recording is a long list of numbers measuring the little air pressure changes detected by the microphone. We will use audio sampled at 44100 Hz (or 44100 Hertz). This means the microphone gives us 44100 numbers per second. Thus, a 10 second audio clip is represented by 441000 numbers (= $10 \times 44100$). 
@@ -79,7 +71,6 @@ It is quite difficult to figure out from this "raw" representation of audio whet
 (If you've ever taken an advanced class on signal processing or on Fourier transforms, a spectrogram is computed by sliding a window over the raw audio signal, and calculates the most active frequencies in each window using a Fourier transform. If you don't understand the previous sentence, don't worry about it.) 
 
 Lets see an example. 
-```
 
 
 ```python
