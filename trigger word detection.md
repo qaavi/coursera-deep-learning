@@ -16,3 +16,15 @@ In this assignment you will learn to:
 - Train a trigger word detection model and make predictions
 
 Lets get started! Run the following cell to load the package you are going to use.    
+
+
+import numpy as np
+from pydub import AudioSegment
+import random
+import sys
+import io
+import os
+import glob
+import IPython
+from td_utils import *
+%matplotlib inline
